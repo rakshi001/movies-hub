@@ -1,3 +1,4 @@
+/* Reset & base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,24 +6,51 @@
 }
 
 body {
-  background-color: rgb(179, 225, 148);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  padding: 20px;
 }
 
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
 .card {
-  color: rgb(24, 31, 25);
-  background-color: grey;
-  padding: 15px;
-  border-radius: 10px;
-
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 35px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.card button {
+  border: none;
+  background-color: #4cafef;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #3a9bd9;
 }

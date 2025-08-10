@@ -1,22 +1,27 @@
-const Card = ({ myMovies }) => {
-  return (
-    <>
+import { useState } from "react";
+import "./App.css"; // Assuming CSS is in App.css
 
-      <h2 className="card">these are the movies {myMovies}</h2>
-    </>
+const Card = ({ myMovies }) => {
+  const [] = useState()
+  const [hasLiked, setHasLiked] = useState(false);
+
+  return (
+    <div className="card">
+      <h2>{myMovies}</h2>
+      <button onClick={() => setHasLiked(!hasLiked)}>
+        {hasLiked ? "Liked ✅" : "Like ❤️"}
+      </button>
+    </div>
   );
 };
 
 const App = () => {
-  const myMovies = ["starwars", "motupatlu", "doreamon"];
   return (
-    <>
-      <div>
-        <Card  myMovies={"star wars"} />
-        <Card myMovies={"motu patlu"} />
-        <Card myMovies={"doreamon ."} />
-      </div>
-    </>
+    <div className="app-container">
+      <Card myMovies="Star Wars" />
+      <Card myMovies="Motu Patlu" />
+      <Card myMovies="Doreamon" />
+    </div>
   );
 };
 
