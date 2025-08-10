@@ -14,7 +14,7 @@ const App = () => {
       <div>
         <Card  myMovies={"star wars"} />
         <Card myMovies={"motu patlu"} />
-        <Card myMovies={"doreamon"} />
+        <Card myMovies={"doreamon ."} />
       </div>
     </>
   );
