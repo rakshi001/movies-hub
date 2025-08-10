@@ -9,6 +9,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+
 .card {
   color: rgb(24, 31, 25);
   background-color: grey;
@@ -22,6 +23,6 @@ body {
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: center;
 }
